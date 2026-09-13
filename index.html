@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <title>Stock Analysis</title>
+</head>
+<body>
+
+    <header>
+        <div class="box">
+            <h1>Analisar Ações</h1>
+            <p><img src="Images/american-dollar-bills.jpg" width="400" height="140"></p>
+        </div>
+    </header>
+
+    <section class="container">
+
+        <div class="card left-up">
+
+            <h2>Stock Picking</h2>
+            <p>Digite o Ticker de uma Ação que você quer analisar na Bolsa de Valores Brasileira</p>
+
+            <table>
+                <tr>
+                    <th>
+                        <input id="tickerAnalisar" type="text" placeholder="Ex: ITSA4" />
+                    </th>
+                    <th>
+                        <button id="buscarTickerBolsa">Inserir Análise no Banco</button>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="card right-up">
+
+            <h2>Verificar Ações Já Analisadas</h2>
+            <p>Escolha se quer verificar as Ações indicadas como Comprar ou indicadas como Não Comprar</p>
+
+            <table>
+                <tr>
+                    <th>
+                        <button id="buscarNAO">Não Comprar</button>
+                    </th>
+                    <th>
+                        <button id="buscarSIM">Comprar</button>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="card left-down">
+
+            <h2>Buscar Ação Específica já Analisada</h2>
+            <p>Digite o Ticker de uma Ação que você quer verificar no Banco de Dados</p>
+
+            <table>
+                <tr>
+                    <th>
+                        <input id="tickerAnalisada" type="text" placeholder="Ex: ITSA4" />
+                    </th>
+                    <th>
+                        <button id="buscarTickerBanco">Buscar Ação já Analisada</button>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="card right-down">
+
+            <h2>Deletar Ação Específica já Analisada</h2>
+            <p>Digite o Ticker de uma Ação que você quer Deletar no Banco de Dados</p>
+
+            <table>
+                <tr>
+                    <th>
+                        <input id="tickerDeletar" type="text" placeholder="Ex: ITSA4" />
+                    </th>
+                    <th>
+                        <button id="deletarTickerBanco">Deletar Ação já Analisada</button>
+                    </th>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div class="card edit-card">
+
+            <div class="edit-description">
+                <h2>Editar Análise de uma Ação</h2>
+
+                <p>
+                    Digite o ticker e escolha se a ação deve ser marcada
+                    como Comprar ou Não Comprar.
+                </p>
+            </div>
+
+            <div class="edit-controls">
+
+                <input
+                    id="tickerEditar"
+                    type="text"
+                    placeholder="Ex: ITSA4"
+                />
+
+                <button
+                    id="editarSIM"
+                    class="button-buy"
+                >
+                    Alterar para Comprar
+                </button>
+
+                <button
+                    id="editarNAO"
+                    class="button-not-buy"
+                >
+                    Alterar para Não Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Ação</th>
+                    <th>Comprar</th>
+                    <th>Data da Análise</th>
+                </tr>
+            </thead>
+            <tbody id="data-output">
+
+            </tbody>
+        </table>
+    </footer>
+
+
+</body>
+</html>
