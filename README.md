@@ -54,7 +54,7 @@ Interface Web desenvolvida em HTML, CSS e JavaScript para consumo da Stock Analy
 - Navegador Web (Chrome, Edge ou Firefox)
 - Back-End rodando localmente em:
 ```
-http://localhost:5000
+http://127.0.0.1:5000
 ```
 
 ---
@@ -71,7 +71,7 @@ http://localhost:5000
 
 O Front-End consome a API em:
 ```
-http://localhost:5000
+http://127.0.0.1:5000
 ```
 
 ---
